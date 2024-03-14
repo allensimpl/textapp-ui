@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Include Axios library -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Include your script.js file -->
+    <script src="path/to/your/script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="./script.js"></script>
+    
+</head>
+<body>
+    <!-- <h1>hello</h1> -->
+    <div class="login" id="login">
+        <div class="login-container">
+            <h1>TEXTR</h1>
+            <form onsubmit="event.preventDefault(); login();">
+                <div class="email-container">
+                    <label class="email-label" for="email">email</label>
+                    <input type="text" id="email" name="email">    
+                </div>
+                <br>
+                <div class="password-container">
+                    <label class="password-label" for="password">password</label>
+                    <input type="text" id="password" name="email">    
+                </div>
+                <div>
+                    <input type="submit" onclick="login()">
+                </div>
+            </form>
+    
+        </div>
+    </div>
+    <div id="texts">
+        
+    </div>
+
+</body>
+</html>
