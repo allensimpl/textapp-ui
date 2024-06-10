@@ -43,7 +43,7 @@ async function login(){
         window.localStorage.setItem("email",response.data.data.email);
         window.localStorage.setItem("name",response.data.data.name);
         window.localStorage.setItem("token",response.data.data.token);
-        window.location.href = window.location.href.split("/")[0] + "/chat.html"
+        window.location.href = window.location.href.split("/")[0] + "/home.html?from"
         return response.data;
     } catch (error) {
         console.error('Error during login:', error);

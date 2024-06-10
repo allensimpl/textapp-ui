@@ -5,16 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.5.1/sockjs.min.js"></script>  -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.js" integrity="sha512-tL4PIUsPy+Rks1go4kQG8M8/ItpRMvKnbBjQm4d2DQnFwgcBYRRN00QdyQnWSCwNMsoY/MfJY8nHp2CzlNdtZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  -->
+    <!-- Include STOMP library -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@stomp/stompjs"></script> -->
+    <script src="stomp.js"></script>
     <link rel="stylesheet" href="chat-styles.css">
     <script src="./chats.js"></script>
 </head>
 <body>
     <div class="chat">
         <div class="chat-heading">
-            <p>to:</p>
-            <p>Allen</p>
-            <p>from:</p>
-            <p>John</p>
+            <div class="header">
+                <p>to:</p>
+                <p>Allen</p>
+                <p>from:</p>
+                <p>John</p>    
+            </div>
+            <br/>
             <div id="texts">
                 <!-- <div class="message">
                     from: Allen
@@ -27,8 +35,8 @@
     -->
             </div>
             <div class="send">
-                <input type="text">
-                <input type="submit">
+                <input id="submit-text" type="text">
+                <input id="submit-button" type="submit">
             </div>
         </div>
     </div>
